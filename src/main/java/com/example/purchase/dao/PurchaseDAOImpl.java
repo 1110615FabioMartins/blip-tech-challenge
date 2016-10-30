@@ -1,46 +1,39 @@
 package com.example.purchase.dao;
 
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
+
 import java.util.List;
 
-import org.joda.time.DateTime;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
+import com.example.purchase.exception.GenericPurchaseException;
 import com.example.purchase.model.Detail;
 import com.example.purchase.model.Purchase;
+
+//TODO Another team will implement the logic in this methods. 
 
 @Repository
 public class PurchaseDAOImpl implements IPurchaseDAO {
 
 	@Override
-	public boolean purchaseExists(Long id) {
+	public boolean purchaseExists(Long id) throws GenericPurchaseException{
 		
 		return false;
 	}
 
 	@Override
-	public List<Purchase> getAllPurchases() {
-		
-		return null;
-	}
-
-	@Override
-	public Purchase updatePurchase(Purchase purchase) {
-		
-		return null;
-	}
-
-	@Override
-	public Purchase createPurchase(Purchase purchase) {
+	public List<Purchase> getAllPurchases() throws GenericPurchaseException{
 		
 		return null;
 	}
 
 	@Override
 	public List<Detail> getDetailForValidPurchases(List<Long> purchasesIds) {
+		
+		return null;
+	}
+
+	@Override
+	public Purchase savePurchase(Purchase purchase) throws GenericPurchaseException {
 		
 		return null;
 	}

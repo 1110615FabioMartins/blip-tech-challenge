@@ -7,15 +7,27 @@ import org.joda.time.DateTime;
 import com.example.purchase.utils.JsonJodaDateTimeSerializer;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
+/**
+ * Model class that represent's a purchase.
+ * 
+ * @author fabio.martins
+ * @since 27-10-2016
+ * @version 0.0.1
+ *
+ */
 public class Purchase {
 	
+	/**ID Purchase**/
 	private Long id;
 	
+	/**Product Type**/
 	private String productType;
 	
+	/**Date that the purchase expires**/
 	@JsonSerialize(using = JsonJodaDateTimeSerializer.class)
 	private DateTime expires;
 	
+	/**Purchase Detail**/
 	private Detail detail;
 	
 

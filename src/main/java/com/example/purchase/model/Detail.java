@@ -1,13 +1,24 @@
 package com.example.purchase.model;
-
+/**
+ * Model class that represent's a detail for a purchase.
+ * 
+ * @author fabio.martins
+ * @since 27-10-2016
+ * @version 0.0.1
+ *
+ */
 public class Detail {
 	
+	/**ID detail**/
 	private Long id;
 	
+	/**Description of a purchase**/
 	private String description;
 	
+	/**Quantity purchased**/
 	private Integer quantity;
 	
+	/**Value of a purchase**/
 	private Double value;
 
 	public Long getId() {
